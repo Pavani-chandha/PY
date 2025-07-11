@@ -23,4 +23,5 @@ urlpatterns = [
     path('about/', views.about, name='about'),
     path('contact',views.contact,name='contact'),
     path('name/<str:name>/',views.name,name='contact')
+    path('json',views.json_data,name='json')
 ]

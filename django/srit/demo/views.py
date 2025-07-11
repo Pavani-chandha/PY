@@ -8,3 +8,6 @@ def about(request):
 def contact(request):
     name=request.GET.get('name')
     return render(request,'home.html',{'name':name})
+def json_data(request):
+    data={'name':'pavani'}
+    return JsonResponse(data)
